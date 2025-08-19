@@ -30,7 +30,10 @@ function App() {
               </li>
             ))}
           </ul>
-          <h1>Total Bill: {totalbill}$</h1>  
+          <h1>Total Bill: {totalbill}$</h1>
+          {totalbill > 1000 && <h1>Your bill is so high</h1>}
+          {totalbill < 1000 && <h1>Your bill is ok</h1>}
+          
         </div>
       </div>
     </div>
